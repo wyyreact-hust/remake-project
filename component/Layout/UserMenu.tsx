@@ -36,7 +36,7 @@ const UserAvatar = () => {
                         />
                     </IconButton>
                 </Tooltip>
-                <Menu 
+                <Menu
                     sx={{ mt: '45px' }}
                     id="user-menu"
                     anchorEl={anchorElUser}
@@ -55,9 +55,11 @@ const UserAvatar = () => {
                     <MenuItem key='profile' onClick={handleGo2UserProfile}>
                         <Typography textAlign='center'>用户主页</Typography>
                     </MenuItem>
+
                     <MenuItem key='logout' onClick={handleLogout}>
                         <Typography textAlign='center'>登出</Typography>
                     </MenuItem>
+
                 </Menu>
             </Box>
         )
